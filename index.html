@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buuga Dirawalnimada ee Waabari</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- WELCOME SCREEN -->
+<div id="welcomeScreen" class="screen">
+  <h1>Ku Soo Dhawoow</h1>
+  <h2>Buuga Dirawalnimada ee Waabari</h2>
+
+  <p class="payment">
+    💳 Ebirr Kaafi: <b>0915747806</b><br>
+    🏦 Bank Account: <b>1000527510272</b><br>
+    Magaca: <b>Xaji Siyad C/Lahi Cali</b>
+  </p>
+
+  <button id="openPassword">Fur Buuga</button>
+</div>
+
+<!-- PASSWORD SCREEN -->
+<div id="passwordScreen" class="screen hidden">
+  <h2>Geli Password-ka</h2>
+  <input type="number" id="passwordInput" placeholder="Password">
+  <button id="checkPassword">Fur</button>
+  <p id="passError" class="error"></p>
+</div>
+
+<!-- CHAPTER LIST -->
+<div id="chaptersScreen" class="screen hidden">
+  <h2>Cutubyada Buugga</h2>
+<div class="chapterBox" onclick="openChapter(1)">CUTUBKA 1aad DABEECAHA</div>
+  <div class="chapterBox" onclick="openChapter(2)">CUTUBKA 2aad CALAMADAHA CAALAMIGA AH EE LAAMIDA DHINICISA KU YALA</div>
+  <div class="chapterBox" onclick="openChapter(3)">CUTUBKA 3aad TACLIINTA AAS-AASIGA AH EE FARSAMADA GAADHIGA</div>
+  <div class="chapterBox" onclick="openChapter(4)">CUTUBKA 4aad AMAANKA SHAQADA DHEXDEEDA IYO JAWAABTA LAGA BIXIYO SHILKA DEG-DEGA AH</div>
+  <div class="chapterBox" onclick="openChapter(5)">CUTUBKA 5aad SOO URURINTA XOGAHA SAFARKA IYO DIYARINTA QORSHAHA</div>
+  <div class="chapterBox" onclick="openChapter(6)">CUTUBKA 6aad QAABKA LOO XAFIDO HANTIDA RAKAABKA IYO XIDHIIDHKA SHAQO EE WANAGSAN</div>
+  <div class="chapterBox" onclick="openChapter(7)">CUTUBKA 7aad GAADIIDKA QAADA XAMUULKA QALALAN</div>
+  <div class="chapterBox" onclick="openChapter(8)">CUTUBKA 8aad HABKA LOO RARO XAMUULKA DAREERAHA AH</div>
+  <div class="chapterBox" onclick="openChapter(9)">CUTUBKA 9aad TABTA LAGU WADO MOOTO-BAASKIILKA</div>
+  <div class="chapterBox" onclick="openChapter(10)">CUTUBKA 10aad HABKA LOO WADO GAADIIDKA RIMOODHKA LEH IYO KUWA AAN LAHAYN</div>
+</div>
+
+<!-- READER SCREEN -->
+<div id="readerScreen" class="screen hidden">
+  <button class="backBtn" onclick="goBack()">⬅ Back</button>
+  <h2 id="chapterTitle"></h2>
+
+  <!-- SAWIRRADA CUTUBKA HALKAN AYAY ISKU XIGI DOONAAN -->
+  <div id="pagesArea"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
